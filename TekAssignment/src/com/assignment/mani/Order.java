@@ -1,10 +1,13 @@
 package com.assignment.mani;
 
+import java.util.ArrayList;
 import java.util.List;
 
-class Order {
+import com.assignment.mani.OrderLine;
 
-	private List<OrderLine> orderLines;
+public class Order {
+
+	private List<OrderLine> orderLines = new ArrayList<OrderLine>();    /** Using ArrayList to store the orders*/
 
 	public void add(OrderLine o) throws Exception {
 		if (o == null) {
@@ -24,7 +27,8 @@ class Order {
 
 	public void clear() {
 		this.orderLines.clear();
+
 	}
+	
+	
 }
-
-
